@@ -1,0 +1,102 @@
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { height:100%; }
+body {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  background:#f6f8fb; color:#0f172a;
+}
+
+:root{
+  --max-w:1200px;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#2563eb;
+  --radius:12px;
+  --shadow: 0 6px 22px rgba(2,6,23,0.06);
+}
+
+
+.container { width:94%; max-width:var(--max-w); margin:0 auto; padding-top:1.5rem; }
+
+
+.navbar { background:var(--card); display:flex; justify-content:space-between; align-items:center; padding:0.9rem 1.5rem; border-bottom:1px solid #eef2f7; }
+.nav-left { display:flex; align-items:center; gap:1.6rem; }
+.logo { width:110px; height:auto; }
+.menu a { color:var(--muted); text-decoration:none; margin-right:1rem; font-weight:500; }
+.menu a.active { background:#eaf2ff; color:var(--accent); padding:0.45rem 0.8rem; border-radius:8px; }
+
+
+.nav-right { display:flex; align-items:center; gap:0.8rem; }
+.icon-btn { background:transparent; border:0; cursor:pointer; }
+.icon-btn img { width:20px; height:20px; display:block; }
+.user-avatar { width:36px; height:36px; border-radius:50%; background:var(--accent); color:white; display:flex; align-items:center; justify-content:center; font-weight:700 }
+
+
+.welcome h1 { font-size:1.9rem; margin-bottom:0.25rem; }
+.welcome p { color:var(--muted); }
+
+
+.stats-grid { margin-top:1.6rem; display:grid; grid-template-columns:repeat(4,1fr); gap:1.2rem; }
+.stat-card { background:var(--card); padding:1.1rem; border-radius:var(--radius); box-shadow:var(--shadow); }
+.stat-card p { color:var(--muted); font-size:0.9rem; }
+.stat-card h2 { margin-top:0.45rem; font-size:1.35rem; }
+
+
+.stat-icon { width:36px; height:36px; border-radius:8px; margin-bottom:0.6rem; }
+.stat-icon.blue { background:#dbeafe; }
+.stat-icon.green { background:#dcfce7; }
+.stat-icon.orange { background:#fef3c7; }
+.stat-icon.red { background:#fee2e2; }
+
+
+.cta-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:1.2rem; margin-top:1.6rem; }
+.cta-card { background:var(--card); padding:1.2rem; border-radius:var(--radius); box-shadow:var(--shadow); display:flex; flex-direction:column; justify-content:space-between; }
+.cta-card.blue-bg { background:linear-gradient(180deg,#0ea5e9,#0284c7); color:#fff; }
+.btn { background:#f3f4f6; border-radius:8px; padding:0.5rem 0.8rem; border:0; margin-top:0.8rem; cursor:pointer; font-weight:600; }
+.btn.light { background:transparent; color:#fff; border:1px solid rgba(255,255,255,0.15); }
+
+
+.bottom-grid { display:grid; grid-template-columns:1fr 420px; gap:1.4rem; margin-top:1.6rem; }
+.panel { background:var(--card); padding:1.2rem; border-radius:var(--radius); box-shadow:var(--shadow); }
+.activity-list { list-style:none; margin-top:0.8rem; }
+.activity-list li { display:flex; gap:0.9rem; padding:0.6rem 0; border-bottom:1px solid #f3f4f6; }
+.activity-list li:last-child { border-bottom:0; }
+.activity-list .icon img { width:18px; height:18px; display:block; }
+.activity-list strong { display:block; }
+.activity-list p { color:var(--muted); font-size:0.9rem; }
+
+
+.upcoming-card { background:#eef6ff; padding:0.9rem; border-radius:8px; margin-top:0.8rem; display:flex; justify-content:space-between; align-items:center; }
+.tag { padding:0.25rem 0.6rem; border-radius:999px; font-size:0.75rem; }
+.blue-tag { background:#dbeafe; color:#1e3a8a; }
+.gray-tag { background:#f3f4f6; color:#374151; }
+.view-more { display:inline-block; margin-top:0.8rem; color:var(--accent); text-decoration:none; font-weight:600; }
+
+
+.workouts-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-top:1rem; }
+.card { background:var(--card); padding:1rem; border-radius:10px; box-shadow:var(--shadow); }
+.card-actions { display:flex; gap:0.6rem; margin-top:0.8rem; }
+
+
+.schedule-list { list-style:none; margin-top:1rem; }
+.schedule-list li { padding:0.6rem 0; border-bottom:1px solid #f3f4f6; }
+
+
+@media (max-width:1100px) {
+  .bottom-grid { grid-template-columns:1fr 1fr; }
+  .workouts-grid { grid-template-columns:repeat(2,1fr); }
+}
+
+@media (max-width:800px) {
+  .stats-grid { grid-template-columns:repeat(2,1fr); }
+  .cta-grid { grid-template-columns:1fr; }
+  .bottom-grid { grid-template-columns:1fr; }
+  .workouts-grid { grid-template-columns:1fr; }
+  .menu a { display:none; } 
+}
+
+@media (max-width:420px) {
+  .welcome h1 { font-size:1.35rem; }
+  .user-avatar { width:32px; height:32px; }
+}
+

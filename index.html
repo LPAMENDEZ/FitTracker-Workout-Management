@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FitTracker – Dashboard</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-left">
+      <img src="assets/icons/logo.svg" class="logo" alt="FitTracker logo">
+      <nav class="menu">
+        <a class="active" href="index.html">Dashboard</a>
+        <a href="templates/workouts.html">Workouts</a>
+        <a href="templates/schedule.html">Schedule</a>
+        <a href="templates/reports.html">Reports</a>
+      </nav>
+    </div>
+
+    <div class="nav-right">
+      <button class="icon-btn" aria-label="Notificaciones">
+        <img src="assets/icons/bell.svg" alt="">
+      </button>
+      <div class="user-avatar" aria-hidden="true">JD</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="welcome">
+      <h1>Welcome back, John!</h1>
+      <p>Track your fitness journey and stay motivated</p>
+    </section>
+
+ 
+    <section class="stats-grid">
+      <article class="stat-card">
+        <div class="stat-icon blue"></div>
+        <p>Total Workouts</p>
+        <h2>47</h2>
+      </article>
+      <article class="stat-card">
+        <div class="stat-icon green"></div>
+        <p>This Week</p>
+        <h2>3</h2>
+      </article>
+      <article class="stat-card">
+        <div class="stat-icon orange"></div>
+        <p>Personal Records</p>
+        <h2>12</h2>
+      </article>
+      <article class="stat-card">
+        <div class="stat-icon red"></div>
+        <p>Current Streak</p>
+        <h2>7 days</h2>
+      </article>
+    </section>
+
+  
+    <section class="cta-grid">
+      <article class="cta-card blue-bg">
+        <h3>Create Workout</h3>
+        <p>Design your next training session</p>
+        <button class="btn light">Get Started →</button>
+      </article>
+
+      <article class="cta-card">
+        <h3>My Workouts</h3>
+        <p>Manage your workout plans</p>
+        <button class="btn">View All →</button>
+      </article>
+
+      <article class="cta-card">
+        <h3>Schedule</h3>
+        <p>Plan your upcoming sessions</p>
+        <button class="btn">Schedule Now →</button>
+      </article>
+    </section>
+
+   
+    <section class="bottom-grid">
+     
+      <article class="panel">
+        <h3>Recent Activity</h3>
+        <ul class="activity-list">
+          <li>
+            <span class="icon"><img src="assets/icons/check.svg" alt="completado"></span>
+            <div>
+              <strong>Completed Full Body Workout</strong>
+              <p>2 hours ago</p>
+            </div>
+          </li>
+          <li>
+            <span class="icon"><img src="assets/icons/plus.svg" alt="nuevo"></span>
+            <div>
+              <strong>Created Leg Day Routine</strong>
+              <p>Yesterday</p>
+            </div>
+          </li>
+          <li>
+            <span class="icon"><img src="assets/icons/trophy.svg" alt="trofeo"></span>
+            <div>
+              <strong>New PR: Bench Press 85kg</strong>
+              <p>3 days ago</p>
+            </div>
+          </li>
+        </ul>
+      </article>
+
+    
+      <article class="panel">
+        <h3>Upcoming Workouts</h3>
+
+        <div class="upcoming-card">
+          <div>
+            <strong>Upper Body Strength</strong>
+            <p>Today, 6:00 PM</p>
+          </div>
+          <span class="tag blue-tag">Today</span>
+        </div>
+
+        <div class="upcoming-card">
+          <div>
+            <strong>Cardio Session</strong>
+            <p>Tomorrow, 7:00 AM</p>
+          </div>
+          <span class="tag gray-tag">Tomorrow</span>
+        </div>
+
+        <div class="upcoming-card">
+          <div>
+            <strong>Leg Day</strong>
+            <p>Friday, 5:30 PM</p>
+          </div>
+          <span class="tag gray-tag">Friday</span>
+        </div>
+
+        <a class="view-more" href="templates/schedule.html">View full schedule →</a>
+      </article>
+    </section>
+
+  </main>
+
+</body>
+</html>
+
